@@ -60,10 +60,17 @@ else:
 # kolku pati se pojavuva vo ime i od kolku karakteri e sostaveno toa ime
 
 
-string = input ("Vnesete go vaseto ime \n")
-vowels=0
-for i in string:
-      if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
-            vowels=vowels+1
-print("Number of vowels are:")
-print(vowels)
+ime = input ("Vnesete go vaseto ime \n")
+dolzinanamime = len(ime)
+print ("Dolzinata na vnesenoto ime e: {}" .format (dolzinanamime))
+
+samoglaskaa = ime.count("a")
+print ("Vaseto ime ja sodrzi samoglaskata a {} pati ".format(samoglaskaa))
+samoglaskae = ime.count("e")
+print ("Vaseto ime ja sodrzi samoglaskata e {} pati ".format(samoglaskae))
+samoglaskai = ime.count("i")
+print ("Vaseto ime ja sodrzi samoglaskata i {} pati ".format(samoglaskai))
+samoglaskao = ime.count("o")
+print ("Vaseto ime ja sodrzi samoglaskata o {} pati ".format(samoglaskao))
+samoglaskau = ime.count("u")
+print ("Vaseto ime ja sodrzi samoglaskata u {} pati ".format(samoglaskau))
